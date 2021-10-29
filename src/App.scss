@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.Container {
+  border: 2px solid red;
+  padding: 5px;
+  min-height: 80vh;
+  width: 90vw;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

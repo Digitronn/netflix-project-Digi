@@ -27,9 +27,7 @@ export default function Navbar() {
               <FontAwesomeIcon icon={faSearch} />
             </li>
             <li>Kids</li>
-            <li>
-              <FontAwesomeIcon icon={f0f3} />
-            </li>
+            <li>{/* <FontAwesomeIcon icon={f0f3} /> */}</li>
             <li>Profile</li>
           </ul>
         </ul>
