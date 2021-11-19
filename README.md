@@ -178,3 +178,17 @@ We now - additionally to title, series image & episode description - also want t
   _ the last part "xyz.mp4" you append dynamically depending on the episode page you are currently watching
 
   GOOD LUCK!
+
+PLAN
+
+Setup three pages / components
+_ A series overview page showing all series in our database
+_ Each series should have a seasons dropdown
+_ When selecting a season we want to get forwarded to the episodes overview
+_ An episodes overview page showing all episodes of a season with the episode titles
+\_ An episode detail page which shows the episode title & episode description
+
+Components => pages =>
+
+1. Navbar (components one)
+2. Main ( - Component two: Critically acclaimed independent movies - Component three: Recent Festival favorite )
