@@ -1,16 +1,17 @@
-import React from 'react';
-import './Section.scss';
-import Card from './Card/Card';
-
-export default function Section() {
+import React from "react";
+import Slider from "react-slick";
+import Card from "./Card/Card";
+import "./Section.css";
+export default function Section({ title, data }) {
+  console.log(title, data);
   return (
     <section className="Section">
-      <h4>Action</h4>
-      <div className="Cards">
-        <Card />
-        <Card />
-        <Card />
-      </div>
+      <h4>{title}</h4>
+      <Slider slidesToShow={3} slidesToScroll={3}>
+        {data?.map((currentValue) => (
+          <Card key={currentValue.id} movie={currentValue} />
+        ))}
+      </Slider>
     </section>
   );
 }

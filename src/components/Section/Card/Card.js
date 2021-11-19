@@ -1,21 +1,22 @@
-import React from 'react';
-import './Card.scss';
-import { Card, Button } from 'react-bootstrap';
-
-export default function CardComponent() {
+import React from "react";
+import "./Card.css";
+import { Link } from "react-router-dom";
+export default function Card({ movie }) {
+  console.log("Movie ==> ", movie.image);
   return (
-    <article className="Card">
-      <Card style={{ width: '18rem' }}>
-        {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-    </article>
+    <Link to={`/movie/${movie.id}`}>
+      <article
+        className="Card"
+        style={{ backgroundImage: `url(${movie.image})` }}
+      >
+        <h4>{movie.title}</h4>
+      </article>
+    </Link>
   );
 }
+
+//params = {key:value}
+// ==> key from Route
+// ==> value from Link
+
+// <Link to={"/movie/" + movie.id}>
